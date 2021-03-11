@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:core';
+
 import '../src/utils/polyline_waypoint.dart';
 import '../src/utils/request_enums.dart';
 import '../src/PointLatLng.dart';
@@ -43,7 +44,7 @@ class NetworkUtil {
       params.addAll({"waypoints": wayPointsString});
     }
     Uri uri =
-        Uri.https("maps.googleapis.com", "maps/api/directions/json", params);
+        Uri.https("maps.googleapis.com", "maps/api/directions/json", params).data.uri;
 
 //     String url = uri.toString();
     // print('GOOGLE MAPS URL: ' + url);
