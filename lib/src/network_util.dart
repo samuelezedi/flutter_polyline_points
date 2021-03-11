@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'dart:core';
 import '../src/utils/polyline_waypoint.dart';
 import '../src/utils/request_enums.dart';
 import '../src/PointLatLng.dart';
